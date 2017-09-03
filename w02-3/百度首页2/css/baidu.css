@@ -1,0 +1,208 @@
+body{
+	font: 12px arial;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.wrapper{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+/*头部信息*/
+header{
+	overflow: hidden;
+}
+header nav{
+	text-align: right;
+	width: 600px;
+	margin: 26px 150px 5px 20px;
+	float: right;
+}
+
+header>nav>a{
+	color: #333;
+	margin-left: 20px;
+}
+
+header>nav>a:hover{
+	color: #00e;
+	margin-left: 20px;
+}
+
+/*超链接 粗体*/
+.mnav{
+	font-weight: bold;
+}
+
+/*设置*/
+.setting{
+	width: 70px;
+	text-align: center;
+	right: 80px;
+	top: 26px;
+	display: block;
+    position: absolute;
+}
+/*设置的下拉框*/
+.settingmenu{
+	display: none;
+	text-align: center;
+	border: 1px solid #d1d1d1;
+}
+
+.setting:hover .settingmenu{
+	display: block;
+}
+
+.settingmenu a{
+	display: block;
+    text-align: center;
+    padding: 0 9px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.settingmenu a:hover{
+	background: #38f;
+}
+
+/*更多产品*/
+.more{
+	width: 90px;
+	text-align: center;
+	right: 0;
+	top: 0;
+	display: block;
+    position: absolute;
+	
+	
+	height: 100%
+}
+/*更多的标题*/
+.moretitle{
+	width: 70px;
+	margin: 20px auto;
+	line-height: 24px;
+	text-decoration: none;
+	color: #fff;
+	background: #38f;
+}
+
+.more:hover{
+	background: #f9f9f9;
+	border-left: 1px solid #d1d1d1;
+}
+.more:hover .moretitle{
+	line-height: 24px;
+	color: #333;
+	background: #f9f9f9;
+}
+.more:hover .moreContainer{
+	display: block;
+}
+
+.moreContainer{
+	display: none;
+}
+.moreContainer a{
+	display: block;
+    text-align: center;
+    padding: 0 9px;
+    line-height: 26px;
+    text-decoration: none;
+	color: #666;
+}
+/*更多的图片logo*/
+.moreContainer span{
+	display: block;
+    text-align: center;
+	background: url("../image/bdbri_icons_2e35e84b.png") no-repeat;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+}
+/*音乐*/
+span.bdbriimgitem_3{
+	width: 40px;
+    background-position: -72px 0;
+}
+/*图片*/
+span.bdbriimgitem_4{
+    background-position: -112px 0;
+}
+/*知道*/
+span.bdbriimgitem_2{
+    background-position: -36px 0;
+}
+/*文库*/
+span.bdbriimgitem_5{
+    background-position: -148px 0;
+}
+/*风云榜*/
+span.bdbriimgitem_6{
+    background-position: -184px 0;
+}
+
+.moreContainer .all{
+	margin: 20px auto 0;
+}
+
+/*主体部分*/
+.content{
+	text-align: center;
+}
+
+.content img{
+	width:270px;
+	height:129px;
+}
+
+.content input{
+	width: 540px;
+	height: 30px;
+	font: 16px arial;
+}
+
+.content button{
+	width: 100px;
+	height: 36px;
+	font: 15px arial;
+	color: #fff;
+	background-color: #3385ff;
+	border: 1px solid #2d78f4;
+}
+
+/*搜索框*/
+.searchbar{
+	margin: 22px auto 0;
+}
+
+/*底部信息*/
+footer{
+	padding: 0;
+	border: 0;
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	bottom: 23px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+footer .ftright,footer .ftright a{
+	text-align: center;
+	color: #999;
+}
+
+footer p{
+	text-align: center;
+}
+
+
+
+
+
+

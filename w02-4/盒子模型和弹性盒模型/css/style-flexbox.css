@@ -1,0 +1,87 @@
+/*旧版弹性盒模型 水平分栏*/
+.con{
+    display: -webkit-box;
+    width:600px;
+    background-color: #0c9;
+}
+#first{
+    height:100px;
+    -webkit-box-flex:1;
+    background-color: #cf0;
+}
+#second{
+    height:100px;
+    -webkit-box-flex:1;
+    background-color: #9fc;
+}
+#third{
+    height:300px;
+    -webkit-box-flex:1;
+    background-color: #06c;
+}
+
+/*新版弹性盒模型 垂直分栏*/
+.con2{
+    display: -webkit-flex;
+    flex-direction: column;
+    width:600px;
+    background-color: #0c9;
+}
+#first2{
+    height:100px;
+    -webkit-flex:1;
+    background-color: #cf0;
+}
+#second2{
+    height:100px;
+    -webkit-flex:1;
+    background-color: #9fc;
+}
+#third2{
+    height:300px;
+    -webkit-flex:1;
+    background-color: #06c;
+}
+
+/*排序(flex)*/
+.con3{
+    display: -webkit-flex;
+    width:600px;
+    background-color: #0c9;
+}
+#first3{
+    height:100px;
+    -webkit-flex:1;
+    order: 2;
+    background-color: #cf0;
+}
+#second3{
+    height:100px;
+    -webkit-flex:1;
+    order: 3;
+    background-color: #9fc;
+}
+#third3{
+    height:300px;
+    -webkit-flex:1;
+    order: 1;
+    background-color: #06c;
+}
+
+/*column分栏*/
+.col{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+}
+
+/*旧版弹性盒模型居中布局*/
+.center{
+    width: 300px;
+    height: 300px;
+    display: -webkit-box;
+    background-color: #cf0;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+

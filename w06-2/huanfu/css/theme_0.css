@@ -1,0 +1,53 @@
+/*搜索框*/
+.right .inputwraper{
+	border: 1px solid #666;
+}
+
+.right .buttonwrapper .submit{
+    border: 1px solid #666;
+    background: linear-gradient(#FFF, #E6E6E6);
+}
+
+.right .buttonwrapper .submit:hover{
+	background: linear-gradient(#F4F4F4, #E5E5E5); 
+}
+/*菜单*/
+.menus{
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;
+}
+
+.menus ul li.menu .link{
+    color: #333;
+}
+
+.menus ul li.menu .link:hover{
+    color: #0aa770;
+}
+
+.menus ul li.menu .active{
+	background-color: #0aa770;
+	color: #fff;
+}
+.menus ul li.menu .active:hover{
+	color: #fff;
+}
+
+/*网址导航*/
+.website_nav{
+	border: 1px solid #84d7ba;
+	background-color: #fcfcfc;
+}
+
+.website_nav ul li.item{
+	color: #000;
+}
+
+.website_nav ul li.item .website_link{
+	color: #000;
+}
+
+.website_nav ul li.item .website_link:hover{
+	color: #0aa770;
+}

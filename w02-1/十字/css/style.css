@@ -1,0 +1,92 @@
+/*整体*/
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*margin-top: -156px;
+    margin-left: -156px;*/
+    /*效果同上，而且不用计算出宽高的一半*/
+    transform: translate(-50%, -50%);
+    width: 312px;
+    height: 312px;
+}
+
+/*宽高、阴影*/
+.top,
+.left,
+.middle,
+.right,
+.bottom {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 10px #111;
+}
+
+/*分别设置颜色、位置*/
+/*上*/
+.top {
+    background-color: darkcyan;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -50px;
+}
+/*左*/
+.left {
+    background-color: purple;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -50px;
+    margin-left: 0;
+}
+/*中*/
+.middle {
+	background-color: #ccc;
+    /*background-image: url(../img/image.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    /*方法1*/
+    /*line-height: 100px;
+    text-align: center;*/
+    /*方法2*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*方法3*/
+    /*display: -webkit-box;
+    -webkit-box-pack: center;
+     -webkit-box-align: center;*/
+}
+/*图像居中*/
+img{
+	height: 24px;
+    width: 24px;
+	/*方法1*/
+	/*vertical-align: middle;*/
+}
+/*右*/
+.right {
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -50px;
+    margin-left: 0;
+}
+/*下*/
+.bottom {
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -50px;
+}

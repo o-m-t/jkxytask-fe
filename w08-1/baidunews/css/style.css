@@ -1,0 +1,148 @@
+/*index.css*/
+/*清除浮动*/
+.cf::before,
+.cf::after{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*左浮动*/
+.fl{
+	float: left;
+}
+
+/*右浮动*/
+.fr{
+	float: right;
+}
+
+html{
+	font-size: 10px;
+	line-height: 10px;
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+/*header背景*/
+.header{
+	width: 100%;
+    height: 48px;
+    background-color: #3e98f0;
+    position: relative;
+    border-bottom: 1px solid #5dabf0;
+	background: #3e98f0 url(../img/bg-news-logo_344ce44.png) no-repeat;
+    background-position: center 10px;
+    background-size: 65px auto;
+}
+
+/*header4个导航按钮*/
+.header a{
+	width: 34px;
+    height: 100%;
+    background: url(../img/icon-bg_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+/*导航按钮 百度首页*/
+.header .baidu-icon{
+	background-position: center 6px;
+    margin-left: 8px;
+}
+/*导航按钮 用户简介*/
+.header .profile-icon{
+	background-position: center -461px;
+    margin-left: 10px;
+}
+/*导航按钮 更多*/
+.header .subscribe-icon{
+	background-position: center -105px;
+    margin-right: 8px;
+}
+/*导航按钮 搜索*/
+.header .search-icon{
+	background-position: center -160px;
+    margin-right: 10px;
+}
+
+.nav{
+	background: #3e98f0;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+    display: block;
+}
+
+.nav ul li {
+    position: relative;
+    text-align: center;
+    float: left;
+    font-size: 1.44rem;
+    line-height: 1.2rem;
+}
+.nav ul a {
+    color: #fff;
+    display: inline-block;
+    padding: 12px 0;
+    text-decoration: none;
+}
+.nav ul .selected a {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.nav ul li i{
+	position: absolute;
+    top: 13px;
+    left: -1px;
+    height: 12px;
+    width: 1px;
+    display: block;
+    overflow-y: hidden;
+    background-color: #5dabf0;
+}
+
+.news_lists{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+
+.news_list{
+	display: flex;
+	margin-bottom: 10px;
+}
+.news_list .newsimg{
+	flex: 1;
+}
+.newsimg img{
+	width: 100%;
+	height: auto;
+}
+.news_list .newscontent{
+	flex: 2;
+	padding: 0 0.8rem;
+}
+.newscontent h1{
+	font-size: 1.4rem;
+    margin: 0px;
+    line-height: 1.4rem;
+}
+.newscontent p{
+	margin-bottom: 0px;
+}
+.newscontent span{
+	display: inline-block;
+}
+.newscontent .newstime{
+	color: #999;
+}
+.newscontent .newssrc{
+	margin-left: 0.8rem;
+	border: 1px solid #efb9b9;
+	border-radius: 2px;
+	color: #ef3f41;
+	
+}

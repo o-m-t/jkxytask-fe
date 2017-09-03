@@ -1,0 +1,128 @@
+/*舞台*/
+.wrap{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+}
+/*立方体*/
+#cube{
+    position: absolute;
+	width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+	transform-style: preserve-3d;
+    transform-origin: 150px 150px 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 150px 150px 0;
+
+    animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation-name: spin;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: spin;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+     /*background: #000;*/
+     /*transform: rotateX(-45deg) rotateY(-45deg);*/
+}
+
+.plane{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+}
+
+/*小色块大小、布局*/
+.square{
+    border-radius: 10px;
+    float: left;
+    /*position: relative;*/
+    width: 92px;
+    height: 92px;
+    margin: 2px;
+    border: 2px solid #fff;
+}
+/*小色块颜色*/
+.front-square{
+    background: #f63;
+}
+.back-square{
+    background: #f30;
+}
+.left-square{
+    background: #06f;
+}
+.right-square{
+    background: #9c0;
+}
+.top-square{
+    background: #333;
+}
+.bottom-square{
+    background: #ff3;
+}
+
+/*前*/
+#front{
+    transform: translateZ(150px);
+}
+/*后*/
+#back{
+    transform: translateZ(-150px) rotateY(180deg);
+}
+/*左*/
+#left{
+    transform: rotateY(270deg) translateZ(150px);
+}
+/*右*/
+#right{
+    transform: rotateY(-270deg) translateZ(150px);
+}
+/*上*/
+#top{
+    transform: rotateX(90deg) translateZ(150px);
+}
+/*下*/
+#bottom{
+    transform: rotateX(-90deg) translateZ(150px);
+}
+/*动画*/
+@keyframes spin {
+    from {
+        -webkit-transform: translateZ(50px) rotateX(-45deg) rotateY(-45deg);
+        transform:  translateZ(50px) rotateX(-45deg) rotateY(-45deg);
+    }
+    to {
+        -webkit-transform:  translateZ(50px) rotateX(315deg) rotateY(315deg);
+        transform:  translateZ(50px) rotateX(315deg) rotateY(315deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: translateZ(50px) rotateX(-45deg) rotateY(-45deg);
+        transform:  translateZ(50px) rotateX(-45deg) rotateY(-45deg);
+    }
+    to {
+        -webkit-transform:  translateZ(50px) rotateX(315deg) rotateY(315deg);
+        transform:  translateZ(50px) rotateX(315deg) rotateY(315deg);
+    }
+}
+

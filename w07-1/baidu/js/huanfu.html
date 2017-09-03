@@ -1,0 +1,68 @@
+<!-- huanfu.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>换肤</title>
+    <style type="text/css">
+    	#styleSwitch{
+    		height: 32px;
+    		width: 100%;
+    		text-align: center;
+    	}
+    	.button{
+    		display: inline-block;
+    		height: 30px;
+			width: 40px;
+			line-height: 30px;
+			text-align: center;
+			border: 1px solid #bbb;
+    	}
+    	.selected{
+    		background: #dfeeaa;
+    	}
+    	.style1{
+    		background: rgba(255,0,255,.3);
+    	}
+    	.style2{
+    		background: rgba(255,255,0,.3);
+    	}
+    	.style3{
+    		background: rgba(0,255,255,.3);
+    	}
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body class="style1">
+<div id="styleSwitch">
+	<div id="style1" class="button selected">1</div>
+	<div id="style2" class="button">2</div>
+	<div id="style3" class="button">3</div>
+</div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#styleSwitch .button').on('click', function(event) {
+    	$('body').removeClass();
+        $('#styleSwitch .button').removeClass('selected');
+        $(this).addClass('selected');
+        console.log(this.id)
+        switch (this.id) {
+            case 'style1':
+                $('body').addClass(this.id);
+                break;
+            case 'style2':
+                $('body').addClass(this.id);
+                break;
+            case 'style3':
+                $('body').addClass(this.id);
+                break;
+        }
+        return false;
+    });
+});
+</script>
+
+</html>

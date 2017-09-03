@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器(简单版本)</title>
+<style>
+.input{
+	height: 26px;
+	width: 149px;
+	line-height: 26px;
+	text-align: right;
+	margin: 0;
+    padding: 0;
+	margin-bottom: 4px;
+}
+.operation{
+	height: 30px;
+	width: 153px;
+    line-height: 26px;
+    text-align: right;
+	margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+}
+#getResult{
+	height: 26px;
+    line-height: 26px;
+    width: 153px;
+    margin: 0;
+    padding: 0;
+	margin-bottom: 4px;
+}
+#result{
+	display: inline-block;
+	height: 30px;
+    line-height: 26px;
+    width: 153px;
+    margin: 0;
+    padding: 0;
+	margin-bottom: 4px;
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	<input id="num1" class="input" type="text"></br>
+	<!-- <input id="ope" class="input" type="text"></br> -->
+	<select id="ope" class="operation">
+		<option value="+" selected>+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select></br>
+	<input id="num2" class="input" type="text"></br>
+	<button id="getResult" onclick="getResult_onclick()">&nbsp;=&nbsp;</button></br>
+	<div id="result"></div></br>
+<script type="text/javascript">
+function getResult_onclick(){
+	var num1 = document.getElementById("num1");
+	var num2 = document.getElementById("num2");
+	var ope = document.getElementById("ope");
+	var num1str = num1.value;
+	var num2str = num2.value;
+	var opeStr = ope.value;
+	// 判断 num1 num2 是否为空
+	if(num1str == null || num1str.trim() == ""){
+		alert("请输入第一个数字！");
+		num1.focus();
+		return;
+	}
+	if(opeStr == null || opeStr.trim() == ""){
+		alert("请输入运算符！");
+		ope.focus();
+		return;
+	}
+	if(num2str == null || num2str.trim() == ""){
+		alert("请输入第二个数字！");
+		num2.focus();
+		return;
+	}
+	
+	// 判断 num1 num2 是否为数字
+	if(isNaN(num1str)){
+		alert(num1str+"不是数字，请输入数字！");
+		num1.focus();
+		return;
+	}
+	if(opeStr != "+" && opeStr != "-" && opeStr != "*" && opeStr != "/"){
+		alert(opeStr+"不是运算符，请输入运算符！");
+		ope.focus();
+		return;
+	}
+	if(isNaN(num2str)){
+		alert(num2str+"不是数字，请输入数字！");
+		num2.focus();
+		return;
+	}
+	
+	var resultNum = operation(num1str, num2str, opeStr);
+	// alert(resultNum);
+
+	var result = document.getElementById("result");
+	result.innerHTML = resultNum;
+}
+
+function operation(num1, num2, ope) {
+	switch(ope){
+		case "+":
+			return numAdd(num1, num2);
+		case '-':
+			return numMinus(num1, num2);
+		case '*':
+			return numMultiplication(num1, num2);
+		case '/':
+			return numDivision(num1, num2);
+	}
+}
+// 加法
+function numAdd(/*Number*/num1, /*Number*/num2) { 
+	var baseNum, baseNum1, baseNum2;
+	try {
+		baseNum1 = num1.split(".")[1].length;
+	} catch (e) {
+		baseNum1 = 0;
+	}
+	try {
+		baseNum2 = num2.split(".")[1].length;
+	} catch (e) {
+		baseNum2 = 0;
+	}
+	baseNum = Math.pow(10, Math.max(baseNum1, baseNum2));
+	return (num1 * baseNum + num2 * baseNum) / baseNum;
+};
+// 减法
+function numMinus(/*Number*/num1, /*Number*/num2) {
+	return num1 - num2;
+}
+// 乘法
+function numMultiplication(/*Number*/num1, /*Number*/num2) {
+	return num1 * num2;
+}
+// 除法
+function numDivision(/*Number*/num1, /*Number*/num2) {
+	// 判断除数为0 ∞
+	if(num1 != 0 && num2 == 0){
+		return "∞";
+	}
+	// 除数 和 被除数 都为0
+	if(num1 == 0 && num2 == 0){
+		return "错误";
+	}
+	return num1 / num2
+}
+</script>
+</body>
+</html>

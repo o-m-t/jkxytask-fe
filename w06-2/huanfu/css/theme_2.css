@@ -1,0 +1,59 @@
+/*背景*/
+body{
+	background: url(../img/bg_2.jpg) no-repeat center top;
+}
+
+/*搜索框*/
+.right .inputwraper{
+	border: 1px solid #FABE00;
+}
+
+.right .buttonwrapper .submit{
+    border: 1px solid #FABE00;
+    background: linear-gradient(#FFF, #E6E6E6);
+}
+
+.right .buttonwrapper .submit:hover{
+	background: linear-gradient(#F4F4F4, #E5E5E5); 
+}
+/*菜单*/
+.menus{
+    border-top: 2px solid #FABE00;
+    border-bottom: 1px solid #E6E053;
+    background-color: #FFC67E;
+}
+
+.menus ul li.menu .link{
+    color: #D62C1D;
+}
+
+.menus ul li.menu .link:hover{
+    color: #FFC302;
+}
+
+.menus ul li.menu .active{
+	background-color: #FFC302;
+	color: #fff;
+}
+
+.menus ul li.menu .active:hover{
+	color: #fff;
+}
+
+/*网址导航*/
+.website_nav{
+	border: 1px solid #F9D167;
+	background-color: #FEEDDB;
+}
+
+.website_nav ul li.item{
+	color: #D62C1D;
+}
+
+.website_nav ul li.item .website_link{
+	color: #D62C1D;
+}
+
+.website_nav ul li.item .website_link:hover{
+	color: #FFC302;
+}

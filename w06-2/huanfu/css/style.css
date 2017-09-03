@@ -1,0 +1,246 @@
+/*common css*/
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul,
+div{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "微软雅黑", Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+textarea {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/**/
+.container{
+	min-width: 990px;
+	position: relative;
+}
+
+/*搜索框*/
+.search_panel_box{
+	width: 913px;
+	height: 82px;
+	position: relative;
+	margin: 100px auto 0;
+}
+/*搜索框 左侧*/
+.search_panel_box .left{
+	width: 120px;
+    height: 40px;
+    position: relative;
+	float: left;
+    margin: 4px 30px 0 0;
+    background: url(../img/index_widthlg.png) -10px -212px no-repeat;
+
+}
+.search_panel_box .left .logo{
+	display: inline-block;
+	width: 120px;
+    height: 40px;
+    background: url(../img/index_widthlg.png) -10px -212px no-repeat;
+
+}
+
+/*搜索框 右侧*/
+.search_panel_box .right{
+    position: relative;
+	float: left;
+}
+.right .inputwraper{
+	float: left;
+	display: inline-block;
+	width: 538px;
+    height: 46px;
+	/*border: 1px solid #666;*/
+}
+.right .inputwraper .input{
+	width: 536px;
+    height: 44px;
+    line-height: 44px;
+    padding: 10px 0;
+    border: 0;
+    padding: 5px;
+    font: 16px arial;
+}
+.right .buttonwrapper{
+	float: left;
+	display: inline-block;
+	margin-left: -1px;
+}
+.right .buttonwrapper .submit{
+	border: 0;
+	width: 120px;
+    height: 46px;
+    line-height: 46px;
+    /*border: 1px solid #666;
+    background: linear-gradient(#FFF, #E6E6E6);*/
+    font-weight: bold;
+}
+
+/*.right .buttonwrapper .submit:hover{
+	background: linear-gradient(#F4F4F4, #E5E5E5); 
+}*/
+
+/*皮肤*/
+.themes{
+	height: 20px;
+	width: 72px;
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.themes ul{
+	height: 100%;
+}
+.themes ul li{
+	width: 21px;
+	height: 100%;
+	margin-left: 3px;
+	float: left;
+}
+.themes ul li a.theme{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	
+	border: 1px solid #888;
+} 
+/*搜索框 end*/
+/*主体内容*/
+.content_box{
+	width: 990px;
+	position: relative;
+    margin: 30px auto 10px;
+    /*background-color: #0e0;*/
+}
+
+/*菜单*/
+.menus{
+	height: 38px;
+    /*border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fcfcfc;*/
+    font-size: 14px;
+}
+
+.menus ul{
+	height: 100%;
+}
+
+/*各个菜单*/
+.menus ul li.menu{
+	width: 99px;
+	height: 100%;
+	float: left;
+}
+/*.menus ul li.menu .active{
+	background-color: #0aa770;
+	color: #fff;
+}*/
+
+.menus ul li.menu .link{
+	display: block;
+    height: 100%;
+	text-align: center;
+    /*color: #333;*/
+    position: relative;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+/*.menus ul li.menu .link:hover{
+    color: #0aa770;
+}*/
+/*菜单 end*/
+
+/*网址导航*/
+.website_nav{
+	width: 992px;
+	height: 242px;
+	margin: 10px auto 10px;
+	/*border: 1px solid #84d7ba;
+	background-color: #fcfcfc;*/
+	position: relative;
+}
+
+.website_nav ul li.item{
+	height: 100%;
+	float: left;
+	width: 165px;
+	/*color: #000;*/
+    font-size: 14px;
+    height: 30px;
+    padding:5px;
+    padding-left: 30px;
+}
+.website_nav ul li.item .website_link{
+	height: 20px;
+	/*color: #000;*/
+    font-size: 14px;
+    vertical-align: top;
+    line-height: 20px;
+}
+/*.website_nav ul li.item .website_link:hover{
+	color: #0aa770;
+}*/
+/*网址导航 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

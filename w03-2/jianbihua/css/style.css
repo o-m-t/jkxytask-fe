@@ -1,0 +1,528 @@
+.board,
+.picture{
+    float: left;
+    width: 345px;
+    height: 527px;
+    background-size: contain;
+}
+.picture{
+    background-image: url(../img/Stan.jpg);
+}
+
+.man{
+    padding: 0;
+}
+
+/*帽子*/
+.man .hat{
+    position: absolute;
+    width: 315px;
+    height: 134px;
+    background: #4D63A3;
+    z-index: 4;
+    margin-left: 16px;
+    margin-top: 36px;
+    border-top-left-radius: 406px 327px;
+    border-top-right-radius: 407px 348px;
+}
+
+/*帽球*/
+.man .hatBall{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background: transparent;
+    z-index: 1;
+    margin-left: 112px;
+    margin-top: -31px;
+}
+
+/*帽球-丝线1*/
+.man .hatBallWire-1{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(-1deg);
+}
+/*帽球-丝线2*/
+.man .hatBallWire-2{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: -2px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(25deg);
+}
+/*帽球-丝线3*/
+.man .hatBallWire-3{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(43deg);
+}
+/*帽球-丝线4*/
+.man .hatBallWire-4{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: -1px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(70deg);
+}
+/*帽球-丝线5*/
+.man .hatBallWire-5{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(90deg);
+}
+/*帽球-丝线6*/
+.man .hatBallWire-6{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transform: rotate(114deg);
+}
+/*帽球-丝线7*/
+.man .hatBallWire-7{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    transform: rotate(136deg);
+}
+/*帽球-丝线8*/
+.man .hatBallWire-8{
+    position: absolute;
+    width: 74px;
+    height: 8px;
+    background: #E41E40;
+    z-index: 1;
+    margin-left: 0px;
+    margin-top: 33px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    transform: rotate(-21deg);
+}
+
+/*帽檐*/
+.man .brim{
+    position: absolute;
+    width: 321px;
+    height: 60px;
+    background: #CF1A3B;
+    border: 0;
+    z-index: 3;
+    margin-left: -3px;
+    margin-top: 104px;
+    border-top-left-radius: 162px 26px;
+    border-top-right-radius: 162px 33px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*帽檐-下*/
+.man .brimBottom{
+    position: absolute;
+    width: 320px;
+    height: 28px;
+    background: #FBD7B3;
+    border: 0;
+    z-index: 3;
+    margin-left: 0px;
+    margin-top: 35px;
+    border-top-left-radius: 181px 32px;
+    border-top-right-radius: 216px 33px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/*头*/
+.man .head{
+	position:absolute;
+	width: 320px;
+	height: 332px;
+	background:#FBD7B3;
+	z-index:3;
+	margin-left: 13px;
+	margin-top: 39px;
+	border-radius:100%;
+}
+
+/*五官*/
+.man .features{
+	position:absolute;
+	width: 320px;
+	height: 332px;
+	background: transparent;
+	z-index:5;
+	margin-left: 13px;
+	margin-top: 39px;
+	border-radius:100%;
+}
+
+/*眼-左*/
+.man .eyeLeft{
+    position: absolute;
+    width: 87px;
+    height: 104px;
+    background: #FBFAFB;
+    z-index: 5;
+    margin-left: 72px;
+    margin-top: 134px;
+    border-top: 1px;
+    border-radius: 100%;
+    border:solid #D0AE8B;
+	border-width:2px 0 0 0;
+    transform: rotate(37deg);
+}
+
+/*眼瞳-左*/
+.man .eyePupilLeft{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #251B21;
+    border: 1px solid #222;
+    z-index: 1;
+    margin-left: 53px;
+    margin-top: 38px;
+    border-radius: 100%;
+}
+
+/*眼-右*/
+.man .eyeRight{
+    position: absolute;
+    width: 87px;
+    height: 104px;
+     background: #FBFAFB;
+    z-index: 6;
+    margin-left: 164px;
+    margin-top: 137px;
+    border-radius: 100%;
+    border:solid #D0AE8B;
+	border-width:2px 0 0 0;
+    transform: rotate(-26deg);
+}
+
+/*眼瞳-右*/
+.man .eyePupilRight{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #251B21;
+    border: 1px solid #222;
+    z-index: 1;
+    margin-left: 19px;
+    margin-top: 40px;
+    border-radius: 100%;
+}
+
+/*嘴*/
+.man .mouth{
+    position: absolute;
+    width: 50px;
+    height: 19px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-top-left-radius: 100%;
+    background: transparent;
+    z-index: 1;
+    margin-left: 131px;
+    margin-top: 287px;
+    transform: rotate(33deg);
+    animation: closes_mouth 6s infinite step-start 0s;
+}
+
+.man .mouthOpen{
+    position: absolute;
+    width: 59px;
+    height: 15px;
+    border-radius: 100%;
+    background: #000;
+    z-index: 1;
+    margin-left: 129px;
+    margin-top: 287px;
+    transform: rotate(15deg);
+    opacity: 0 !important;
+    animation: open_mouth 6s infinite step-start 0s;
+}
+
+@keyframes open_mouth{
+    0%{ opacity: 0; }
+  	8%{ opacity: 0; }
+    20%{ opacity: 1; }
+}
+@keyframes closes_mouth{
+    0%{ opacity: 1; }
+    8%{ opacity: 1; }
+    20%{ opacity: 0; }
+}
+
+/*身*/
+.man .body{
+	position:relative;
+	top: 324px;
+	left: 46px;
+	width: 250px;
+	height: 160px;
+	background:#995A51;
+	border:solid #354983;
+	border-width: 0 0 3px 0;
+	z-index:2;
+	
+    border-top-left-radius: 43px 120px;
+    border-top-right-radius: 48px 120px;
+    border-bottom-left-radius: 120px 20px;
+    border-bottom-right-radius: 120px 20px;
+}
+
+/*左 领子*/
+.man .neckwearLeft{
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    width: 118px;
+    height: 32px;
+    background: #D11D3E;
+    z-index: 10;
+    transform: rotate(28deg);
+    border-top-left-radius: 111px 38px;
+    border-bottom-left-radius: 110px 38px;
+    border-top-right-radius: 110px 35px;
+    border-bottom-right-radius: 157px 44px;
+}
+
+/*右 领子*/
+.man .neckwearRight{
+    position: absolute;
+    top: 19px;
+    left: 123px;
+    width: 114px;
+    height: 31px;
+    background: #D11D3E;
+    z-index: 10;
+    transform: rotate(-27deg);
+    border-top-right-radius: 111px 38px;
+    border-bottom-right-radius: 110px 38px;
+    border-top-left-radius: 110px 35px;
+    border-bottom-left-radius: 157px 44px;
+}
+
+/*拉链*/
+.man .ziper{
+    position: absolute;
+    top: 62px;
+    left: 123px;
+    width: 4px;
+    height: 96px;
+    background: #000;
+    z-index: 10;
+    transform: rotate(3deg);
+}
+
+/*纽扣*/
+.man .button{
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    z-index: 10;
+    border-radius: 50%;
+}
+.man .button:before{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    z-index: 10;
+    border-radius: 50%;
+}
+.man .button:after{
+    content: "";
+    position: absolute;
+    top: 69px;
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+/*手臂-左*/
+.man .armLeft{
+    position: relative;
+    top: -13px;
+    left: -15px;
+    width: 44px;
+    height: 144px;
+    background: #995A51;
+    border-top-left-radius: 40px 120px;
+    border-bottom-left-radius: 40px 120px;
+    transform: rotate(22deg);
+}
+
+/*手臂阴影-左*/
+.man .armLeftShadow{
+    position: relative;
+    top: 72px;
+    left: 41px;
+    width: 3px;
+    height: 44px;
+    background: #222;
+    border-top-left-radius: 40px 263px;
+    transform: rotate(-10deg);
+}
+
+/*手-左*/
+.man .handLeft{
+    position: absolute;
+    top: 104px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: #D41C3C;
+    border-radius: 100%;
+}
+
+/*大拇指-左*/
+.man .thumbLeft{
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background: #D41F3F;
+    border: 1px solid #333;
+    border-radius: 100%;
+    z-index: 4;
+}
+
+/*手臂-右*/
+.man .armRight{
+    position: absolute;
+    top: -10px;
+    left: 216px;
+    width: 44px;
+    height: 144px;
+     background: #995A51;
+    border-top-right-radius: 40px 120px;
+    border-bottom-right-radius: 40px 120px;
+    transform: rotate(-23deg);
+}
+
+/*手臂阴影-右*/
+.man .armRightShadow{
+    position: absolute;
+    top: 72px;
+    left: -3px;
+    width: 2px;
+    height: 44px;
+    background: #222;
+    border-top-right-radius: 40px 263px;
+    transform: rotate(7deg);
+}
+
+/*手-右*/
+.man .handRight{
+    position: absolute;
+    top: 108px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    background: #D41C3C;
+    border-radius: 100%;
+}
+
+/*大拇指-右*/
+.man .thumbRight{
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+    background: #D41F3F;
+    border: 1px solid #333;
+    border-radius: 100%;
+    z-index: 4;
+}
+
+/*腿*/
+.man .leg {
+    position: relative;
+    top: 298px;
+    left: 61px;
+    width: 222px;
+    height: 50px;
+    background: #4C609E;
+    z-index: 1;
+}
+
+/*左脚*/
+.man .feetLeft{
+    position: absolute;
+    top: 42px;
+    left: -22px;
+    width: 132px;
+    height: 13px;
+    background: #302A33;
+    border-top-left-radius: 110px 26px;
+    border-top-right-radius: 110px 15px;
+}
+/*右脚*/
+.man .feetRight{
+    position: absolute;
+    top: 44px;
+    left: 110px;
+    width: 132px;
+    height: 13px;
+    background: #302A33;
+    border-top-left-radius: 110px 15px;
+    border-top-right-radius: 110px 26px;
+    transform: rotate(2deg);
+}
+
+
+

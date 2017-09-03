@@ -1,0 +1,35 @@
+body{
+    background: #0D7792;
+    font-size: 12px;
+}
+/*整体*/
+.wrapper {
+    width:710px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+/*表格边框*/
+.form-table{
+    border-collapse: collapse;
+    border:1px solid #ccc;
+}
+/*表格单元格*/
+.form-table td {
+    border-collapse: collapse;
+    border:1px solid #ccc;
+    padding: 3px;
+}
+/*蓝色提示文字*/
+.blue{
+    color:blue;
+}
+
+.navLink{
+    float: right;
+}
+/*链接样式*/
+a{
+    text-decoration: none;
+}

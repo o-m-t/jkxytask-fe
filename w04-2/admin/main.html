@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>系统管理后台</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Chart.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">后台管理系统</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">后台管理系统</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-user"></span>张三
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>设置</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>注销</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 主体部分 -->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 侧边菜单 -->
+                <div class="col-md-3">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          核心管理
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">基本配置</a></li>
+                                    <li class="list-group-item"><a href="#">管理员设置</a></li>
+                                    <li class="list-group-item"><a href="#">系统维护</a></li>
+                                    <li class="list-group-item"><a href="#">模块管理</a></li>
+                                    <li class="list-group-item"><a href="#">日志管理</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          核心管理
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">基本配置</a></li>
+                                    <li class="list-group-item"><a href="#">管理员设置</a></li>
+                                    <li class="list-group-item"><a href="#">系统维护</a></li>
+                                    <li class="list-group-item"><a href="#">模块管理</a></li>
+                                    <li class="list-group-item"><a href="#">日志管理</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          核心管理
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">基本配置</a></li>
+                                    <li class="list-group-item"><a href="#">管理员设置</a></li>
+                                    <li class="list-group-item"><a href="#">系统维护</a></li>
+                                    <li class="list-group-item"><a href="#">模块管理</a></li>
+                                    <li class="list-group-item"><a href="#">日志管理</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧内容 -->
+                <div class="col-md-9">
+                    <!-- 右侧顶部标签 -->
+                    <div class="main-nav-tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#">主页
+	                    	<button type="button" class="close" aria-hidden="true">&times;</button></a>
+                            </li>
+                            <li role="presentation"><a href="#">基本配置
+	                        <button type="button" class="close" aria-hidden="true">&times;</button></a>
+                            </li>
+                            <li role="presentation"><a href="#">日志管理
+	                        <button type="button" class="close" aria-hidden="true">&times;</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 右侧标签页 -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <canvas id="canvas" width="400" height="249" style="display: block; width: 499px; height: 249px;"></canvas>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6>Copyright &copy;系统集成有限公司</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--页脚结束-->
+</body>
+<script>
+var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var randomScalingFactor = function() {
+    return Math.round(Math.random() * 100);
+    //return 0;
+};
+var randomColorFactor = function() {
+    return Math.round(Math.random() * 255);
+};
+var randomColor = function(opacity) {
+    return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+};
+
+var config = {
+    type: 'line',
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "历史平均",
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+            fill: false,
+            borderDash: [5, 5],
+        }, {
+            label: '均值',
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+        }, {
+            label: "高峰",
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: '数据统计图表'
+        },
+        tooltips: {
+            mode: 'label',
+            callbacks: {
+                // beforeTitle: function() {
+                //     return '...beforeTitle';
+                // },
+                // afterTitle: function() {
+                //     return '...afterTitle';
+                // },
+                // beforeBody: function() {
+                //     return '...beforeBody';
+                // },
+                // afterBody: function() {
+                //     return '...afterBody';
+                // },
+                // beforeFooter: function() {
+                //     return '...beforeFooter';
+                // },
+                // footer: function() {
+                //     return 'Footer';
+                // },
+                // afterFooter: function() {
+                //     return '...afterFooter';
+                // },
+            }
+        },
+        hover: {
+            mode: 'dataset'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+                ticks: {
+                    suggestedMin: 0,
+                    suggestedMax: 150,
+                }
+            }]
+        }
+    }
+};
+
+$.each(config.data.datasets, function(i, dataset) {
+    dataset.borderColor = randomColor(0.4);
+    dataset.backgroundColor = randomColor(0.5);
+    dataset.pointBorderColor = randomColor(0.7);
+    dataset.pointBackgroundColor = randomColor(0.5);
+    dataset.pointBorderWidth = 1;
+});
+
+window.onload = function() {
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myLine = new Chart(ctx, config);
+};
+</script>
+
+</html>

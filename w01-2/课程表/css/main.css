@@ -1,0 +1,45 @@
+body, h2{
+	margin: 0;
+	padding: 0;
+}
+
+/*背景色*/
+body{
+	background: #ddd;
+}
+
+/*整体*/
+.wrapper{
+	width:500px;
+	margin: 100px auto;
+	padding: 30px;
+	/*background: #ddd;*/
+}
+
+/*头部*/
+header{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/*表格div*/
+.maintable{
+	text-align: center;
+}
+
+/*表格*/
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border:2px solid #111;
+}
+
+/*单元格*/
+th, td{
+	min-width: 40px;
+	height: 30px;
+	font-size: 18px;
+	border:1px solid #111;
+}
+
+
